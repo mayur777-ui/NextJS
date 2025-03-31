@@ -1,8 +1,9 @@
 import Card from "@/components/Card";
-export default function User(){
+
+export default function DefaultRevenue(){
     return (
         <>
-            <Card>User bar</Card>
+        <Card>Revenue bar</Card>
         </>
     )
 }

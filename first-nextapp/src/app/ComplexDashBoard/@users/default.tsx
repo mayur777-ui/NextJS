@@ -1,8 +1,8 @@
 import Card from "@/components/Card";
-export default function User(){
+export default function DefaultUser(){
     return (
         <>
-            <Card>User bar</Card>
+            <Card>User default bar</Card>
         </>
     )
 }

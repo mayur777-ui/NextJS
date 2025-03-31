@@ -1,17 +1,19 @@
-
 export default function RootLayout({
   children,
   users,
     revenue,
     notifications,
+    login,
 
 }: {
   children: React.ReactNode,
   users:React.ReactNode,
     revenue:React.ReactNode,
     notifications:React.ReactNode,
+    login:React.ReactNode
 }) {
-  return (
+  const isLoginIn = false;
+  return isLoginIn ? (
     <>
       <div>{children}</div>
         <div className="flex h-100%"> 
@@ -21,8 +23,14 @@ export default function RootLayout({
             </div>
             <div className="flex flex-1">
                 {notifications}
-            </div>
-        </div>
+            </div> 
+         </div>
+    </>
+  ):(
+    <>
+      <div>{children}</div>
+      <div>THIS IS LOGIN PAGE</div>
+      <div>{login}</div>
     </>
   )
 }

@@ -1,4 +1,4 @@
-export default function DefaultComplexDashBorard() {
+export default function ComplexDashBorard() {
     return (
         <>
             <header className="bg-gray-800 text-white p-4 flex justify-center items-center">

@@ -10,13 +10,11 @@ export default function reviewdetails( {params}:{
     }
 } ){
 
-    const random = getRandomInt(2);
+    const random = 1;
     if(random === 1){
-        throw new Error('Error in review details page');
+        throw new Error('Error in review details page haaahaa!');
     }
-    if(parseInt(params.reviewId) > 1000){
-        notFound();
-    }
+    
     return (
         <>
             <h1>
